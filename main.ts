@@ -1,6 +1,7 @@
 export default {
   fetch(request: Request): Response {
     console.debug("this log isn't visible");
+    console.log("hello from testing branch");
     console.log("In function, hello world!");
     console.log("URL="+request.url);
     console.log("TEST set", Deno.env.has("TEST"));
